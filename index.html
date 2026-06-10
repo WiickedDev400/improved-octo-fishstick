@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employment Portfolio | improved-octo-fishstick</title>
+    <meta name="description" content="A professional browser-ready employment page for employers to view the project quickly and clearly." />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #07111f;
+        --panel: #102235;
+        --panel-2: #162d41;
+        --line: #27435d;
+        --text: #edf6ff;
+        --muted: #b8cadc;
+        --accent: #7dd3fc;
+        --accent-2: #38bdf8;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+          radial-gradient(circle at top, #15304b 0, var(--bg) 40%),
+          linear-gradient(180deg, #07111f 0%, #040a12 100%);
+        color: var(--text);
+      }
+
+      a { color: var(--accent); text-decoration: none; }
+      .wrap { width: min(1200px, calc(100% - 24px)); margin: 0 auto; }
+      header {
+        padding: 24px 0 8px;
+        border-bottom: 1px solid rgba(125, 211, 252, 0.08);
+      }
+
+      .topbar {
+        display: flex; justify-content: space-between; align-items: center; gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .badge {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 8px 10px; border-radius: 999px; border: 1px solid var(--line);
+        background: rgba(16, 34, 53, 0.9); color: var(--muted); font-size: 0.95rem;
+      }
+
+      .hero {
+        display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 24px;
+        align-items: stretch; padding: 32px 0 18px;
+      }
+
+      .card {
+        background: linear-gradient(180deg, rgba(16, 34, 53, 0.98), rgba(8, 16, 27, 0.98));
+        border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+        padding: 18px;
+      }
+
+      h1, h2, h3 { margin-top: 0; }
+      h1 { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.05; }
+      .lede { color: var(--muted); font-size: 1.02rem; line-height: 1.6; }
+
+      .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+      .chip {
+        border: 1px solid rgba(125, 211, 252, 0.18); background: rgba(125, 211, 252, 0.08);
+        padding: 8px 10px; border-radius: 999px; color: var(--text); font-size: 0.92rem;
+      }
+
+      .grid { display: grid; gap: 18px; margin-top: 18px; }
+      .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .mini-stat {
+        padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel);
+      }
+      .mini-stat strong { display: block; font-size: 1.15rem; margin-bottom: 6px; color: var(--accent); }
+
+      .code-card { margin-top: 20px; }
+      .code-header { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
+      pre {
+        margin: 0; background: #02070d; border: 1px solid var(--line); border-radius: 14px;
+        padding: 12px; overflow-x: auto; color: #d9ecff; font-size: 0.92rem; line-height: 1.45;
+      }
+      .muted { color: var(--muted); }
+      footer { padding: 18px 0 30px; color: var(--muted); font-size: 0.95rem; }
+
+      @media (max-width: 980px) {
+        .hero { grid-template-columns: 1fr; }
+        .grid.two { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <div class="badge">Employment portfolio • browser-ready</div>
+        <div class="badge">Open this link in any modern browser</div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <article class="card">
+          <h1>Professional employment page for your project</h1>
+          <p class="lede">This page is designed to present your work clearly to employers, recruiters, and interviewers. It focuses on the final result: a polished, browser-ready experience that can be shared directly from the live URL.</p>
+          <div class="chips">
+            <span class="chip">Clean presentation</span>
+            <span class="chip">Easy to share</span>
+            <span class="chip">Works in any browser</span>
+            <span class="chip">Employer-ready layout</span>
+          </div>
+        </article>
+
+        <aside class="card">
+          <h2>What employers will see</h2>
+          <div class="grid two">
+            <div class="mini-stat"><strong>1</strong> A clear, professional introduction</div>
+            <div class="mini-stat"><strong>2</strong> A simple, confident project overview</div>
+            <div class="mini-stat"><strong>3</strong> A live page they can open immediately</div>
+            <div class="mini-stat"><strong>4</strong> A polished presentation without clutter</div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="card">
+        <h2>Why this page works</h2>
+        <p class="lede">The design keeps the focus on readability, trust, and speed. Employers can understand the purpose of the project in seconds, and the page is ready to open from the shared link without extra setup.</p>
+        <div class="grid two">
+          <div class="mini-stat"><strong>Focus</strong> Clean messaging and a professional layout for quick review.</div>
+          <div class="mini-stat"><strong>Accessibility</strong> Works well on desktop and mobile browsers.</div>
+          <div class="mini-stat"><strong>Shareability</strong> A single URL is enough for the employer to view the page.</div>
+          <div class="mini-stat"><strong>Ready for interviews</strong> Suitable for demo, portfolio, and recruitment review.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">Open the local URL from the server terminal to view this employment page in any browser.</div>
+    </footer>
+  </body>
+</html>
