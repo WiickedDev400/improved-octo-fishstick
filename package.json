@@ -1,0 +1,9 @@
+{
+  "name": "improved-octo-fishstick",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node test/node_test.js",
+    "lint": "eslint . --ext .js"
+  }
+}

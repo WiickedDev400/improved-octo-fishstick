@@ -1,0 +1,27 @@
+# improved-octo-fishstick
+
+Repository initialized by GitHub Copilot assistant.
+
+This repository contains both Node and Python minimal scaffolds and CI.
+
+Quick commands:
+
+- Run Node tests:
+
+```bash
+npm test
+```
+
+- Run Python tests:
+
+```bash
+python -m unittest discover -v
+```
+
+Files added:
+
+- `node/index.js`, `test/node_test.js`
+- `python_pkg/__init__.py`, `tests/test_python.py`
+- `.github/workflows/ci.yml`
+
+Next steps: add real source code and dependencies.
