@@ -5,5 +5,8 @@
   "scripts": {
     "test": "node test/node_test.js",
     "lint": "eslint . --ext .js"
+  },
+  "devDependencies": {
+    "eslint": "10.4.1"
   }
 }
