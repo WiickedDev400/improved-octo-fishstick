@@ -24,6 +24,20 @@ npm test
 python -m unittest discover -v
 ```
 
+- Serve the page locally with Python:
+
+```bash
+python serve.py
+```
+
+- Or serve the page with npm:
+
+```bash
+npm start
+```
+
+Then open `http://127.0.0.1:8000` in your browser.
+
 Files added:
 
 - `node/index.js`, `test/node_test.js`
