@@ -6,6 +6,12 @@ This repository contains both Node and Python minimal scaffolds and CI.
 
 Quick commands:
 
+- Install Node dependencies:
+
+```bash
+npm ci
+```
+
 - Run Node tests:
 
 ```bash
